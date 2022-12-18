@@ -9,7 +9,9 @@ export default function Layout() {
       <Header />
       <div className="flex">
         <Sidebar />
-        <Outlet />
+        <div style={{ flexGrow: 1, padding: "30px" }}>
+          <Outlet />
+        </div>
       </div>
     </div>
   );
